@@ -41,6 +41,7 @@ public class Zad3 {
         int r = scanner.nextInt();
         int s = scanner.nextInt();
 
+        
         zamijeniKolone(matr, r, s);
         ispisiMatricu(matr);
     }

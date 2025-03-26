@@ -12,9 +12,11 @@ public class Zad7 {
 
         for (int i = 0; i < matr.length; i++) {
             for (int j = 0; j < matr.length; j++) {
-                matr[i][j] = 
+                matr[i][j] = rand.nextInt(2 * k) - k;
             }
         }
+
+        return matr;
     }
 
     public static void main(String[] args) {
@@ -27,6 +29,9 @@ public class Zad7 {
         System.out.println("Unesite k:");
         int k = scanner.nextInt();
 
+
+
+        
     }
 
 }

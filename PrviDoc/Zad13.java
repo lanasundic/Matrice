@@ -11,17 +11,18 @@ public class Zad13 {
         
         for (int i = 0; i < matr.length; i++) {
             boolean redValidan = true;
+            boolean kolonaValidna = true;
             for (int k = 1; k <= matr.length; k++) {
                 boolean postojiURedu = false;
+                boolean postojiUKoloni = false;
                 for (int j = 0; j < matr.length; j++) {
-                    if(matr[i][j] == k) {
-                        postojiURedu = true;
-                    }
+                    if(matr[i][j] == k) postojiURedu = true;
+                    if(matr[j][i] == k) postojiUKoloni = true;
                 }
-                if (!postojiURedu)
-                    redValidan = false;
+                if (!postojiURedu) redValidan = false;
+                if (!postojiUKoloni) kolonaValidna = false;
             }
-            if (!redValidan)
+            if (!redValidan || !kolonaValidna)
                 matricaValidna = false;
         }
         if(matricaValidna) {

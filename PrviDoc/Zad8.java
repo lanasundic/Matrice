@@ -16,7 +16,7 @@ public class Zad8 {
                 matr[0][j] = j + 1;     //prvi red popunjavamo normalno
         }
 
-        for (int i = 1; i < n; i++) {   //krecemo od krugog reda
+        for (int i = 1; i < n; i++) {   //krecemo od drugog reda
                 for (int j = 0; j < n; j++) {
                         if(j == n - 1) {        //ako je posljednji el
                                 matr[i][j] = matr[i - 1][0];    //uzmi vrijednost prvog elementa prethodnog reda

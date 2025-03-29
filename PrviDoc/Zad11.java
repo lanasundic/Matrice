@@ -9,31 +9,29 @@ public class Zad11 {
     public static void BrojServeraKojiKomuniciraju(int matr[][]) {
         int n = matr.length;    //duzina matrice
         int m = matr[0].length; //sirina matrice
+
         int cnt = 0;    //broj servera
 
         for (int i = 0; i < matr.length; i++) {
             for (int j = 0; j < matr[i].length; j++) {
                 if(matr[i][j] == 1) {
-                     = matr[i][j];    //nasli smo server
-
-                    //int red = i;    //zapamti red u koji se nalazi server
-                    //int kolona = j;     //zapamti kolonu u kojoj se nalazi server
-                }
-                int brojacURedu = 0;
-                for (int k = 0; k < m; k++) {     //da li postoje serveri u istom redu
-                    if(matr[i][k] == 1) {
-                        brojacURedu++;
+                    
+                    int brojacURedu = 0;
+                    for (int k = 0; k < matr[0].length; k++) {     //da li postoje serveri u istom redu
+                        if(matr[i][k] == 1) {
+                            brojacURedu++;
+                        }
                     }
-                }
-                
-                int brojacUKoloni = 0;
-                for (int k = 0; k < matr.length; k++) {      //da li postoje serveri u istoj koloni
-                    if(matr[k][j] == 1) {     //idemo po koloni gdje se nalazi element
-                        brojacUKoloni++;
+                    
+                    int brojacUKoloni = 0;
+                    for (int k = 0; k < matr.length; k++) {      //da li postoje serveri u istoj koloni
+                        if(matr[k][j] == 1) {     //idemo po koloni gdje se nalazi element
+                            brojacUKoloni++;
+                        }
                     }
-                }
-                if(brojacURedu > 1 || brojacUKoloni > 1) {
-                    cnt++;      //povecavamo cnt sto nam je broj servera koji komuniciraju
+                    if(brojacURedu > 1 || brojacUKoloni > 1) {
+                        cnt++;      //povecavamo cnt sto nam je broj servera koji komuniciraju
+                    }
                 }
             }
         }

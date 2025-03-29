@@ -17,17 +17,18 @@ public class Zad10 {
                 }
             }
 
-        //provjera da li je najveci u svojoj koloni:
-        for (int k = 0; k < matr.length; k++) {
-            if(matr[k][minKolona] > najmanjiURedu) {
-                break;
+            //provjera da li je najveci u svojoj koloni:
+            for (int k = 0; k < matr.length; k++) {
+                if(matr[k][minKolona] > najmanjiURedu) {
+                    break;
+                }
+                if(k == matr.length - 1) {  //ako smo dosli do zadnjeg el
+                    System.out.println("Element " + najmanjiURedu + "(Red: " + i + "Kolona:" + minKolona + ")");
+                }
             }
-            if(k == matr.length - 1) {  //ako smo dosli do zadnjeg el
-                System.out.println("Element " + najmanjiURedu + "(Red: " + i + "Kolona:" + minKolona + ")");
-            }
-        }
         }
     }
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

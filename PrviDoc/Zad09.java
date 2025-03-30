@@ -6,6 +6,6 @@
 */
 
 
-public class Zad9 {
+public class Zad09 {
     
 }

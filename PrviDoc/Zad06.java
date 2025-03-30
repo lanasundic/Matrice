@@ -13,7 +13,7 @@
 
 import java.util.Scanner;
 
-public class Zad6 {
+public class Zad06 {
 
     public static void rotacijaIStampa(int mat[][], int n) {
         for (int j = 0; j < mat.length; j++) {

@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-public class Zad8 {
+public class Zad08 {
 
     public static int[][] popuniMatricu(int n) {
         int[][] matr = new int[n][n];

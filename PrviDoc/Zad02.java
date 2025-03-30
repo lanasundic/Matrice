@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Zad2 {
+public class Zad02 {
 
     public static void lokalni_maksimumi(int mat[][]) {
         int index = 0;

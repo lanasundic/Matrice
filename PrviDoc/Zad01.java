@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Zad1 {
+class Zad01 {
 
     public static void sumaMatrice(int mat[][]) {
         int zbir = 0;

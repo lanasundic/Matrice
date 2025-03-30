@@ -4,7 +4,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Zad7 {
+public class Zad07 {
 
     public static int[][] popuniMatricu1(int m, int n, int k) {
         Random rand = new Random();

@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Zad4 {
+public class Zad04 {
     public static boolean simetricna(int mat[][]) {
 
         for (int i = 0; i < mat.length; i++) {

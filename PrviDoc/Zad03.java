@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Zad3 {
+public class Zad03 {
     public static void ispisiMatricu(int mat[][]) {
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {

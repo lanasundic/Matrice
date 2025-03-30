@@ -20,7 +20,7 @@ DA	NE
 
 import java.util.Scanner;
 
-public class Zad5 {
+public class Zad05 {
     public static boolean jeToplicova(int mat[][]) {
         for (int i = 0; i < mat.length - 1; i++) {      
             for (int j = 0; j < mat[i].length - 1; j++) {

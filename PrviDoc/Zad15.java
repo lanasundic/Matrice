@@ -14,30 +14,30 @@ public class Zad15 {
 
     public static int[][] pomnozi(int a[][], int b[][]) {
         int m = a.length;
-        int q = b[0].length;
         int n = a[0].length;    //broj kolona prve matrice odnosno broj vrsta druge
+        int q = b[0].length;
 
         int[][] rezultat = new int[m][q];    //rezultujuca matrica
 
-        for (int i = 0; i < m; i++) {    //idemo po vrstama prve matrice
+        for (int i = 0; i < m; i++) {    //idemo po redovi prve matrice
             for (int j = 0; j < q; j++) {    //idemo po kolonama druge matrice 
                 int suma = 0;
                 
                 for (int k = 0; k < n; k++) {  //idemo kroz zajednicku dimenziju n - broj kolona prve matrice i broj vrsta druge matrice
                     suma += a[i][k] * b[k][j];
-                    }
-                
-                    rezultat[i][j] = suma;
                 }
+            
+                rezultat[i][j] = suma;
             }
-            return rezultat;
+        }
+        return rezultat;
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Unesite dimenzije prve matrice:");
-        int n = scanner.nextInt();
         int m = scanner.nextInt();
+        int n = scanner.nextInt();
 
         System.out.println("Unesite dimenzije druge matrice:");
         int p = scanner.nextInt();
@@ -47,7 +47,7 @@ public class Zad15 {
             System.out.println("Da bi se dvije matrice pomnozile n i q moraju da budu isti.");
         }
         
-        int[][] matr1 = new int[n][m];
+        int[][] matr1 = new int[m][n];
         int[][] matr2 = new int[p][q];
 
         System.out.println("Unesite elemente prve matrice:");

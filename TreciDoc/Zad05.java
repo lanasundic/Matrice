@@ -10,11 +10,32 @@
 //Улаз: Са стандардног улаза се уноси броj предмета n(5 ≤ n ≤ 10), а затим матрица димензиjе n × n коjа
 //садржи само нуле и jединице - jединица у врсти v и колони k означава да предмет са редним броjем v зависи
 //од предмета са редним броjем k.
+
 //Излаз: На стандардни излаз исписати DA ако матрица испуњава све задате услове тj. NE ако нарушава било
 //коjи од њих.
 
 package TreciDoc;
 
+import java.util.Scanner;
+
 public class Zad05 {
-    
+    public static void IspunjeniUsloviFalkultet(int[][] matr, int n) {
+
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Unesite dimenzije matrice:");
+        int n = scanner.nextInt();
+
+        int[][] matr = new int[n][n];
+
+        System.out.println("Unesite elemente matrice:");
+        for (int i = 0; i < matr.length; i++) {
+            for (int j = 0; j < matr.length; j++) {
+                matr[i][j] = scanner.nextInt();
+            }
+        }
+
+    }
 }

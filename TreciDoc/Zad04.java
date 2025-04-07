@@ -11,6 +11,26 @@
 
 package TreciDoc;
 
+import java.util.Scanner;
+
 public class Zad04 {
-    
+    public static void koreografija(int[][] matr, int n) {
+        
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Unesite dimenzije matrice:");
+        int n = scanner.nextInt();
+
+        int[][] matr = new int[n][n];
+
+        System.out.println("Unesite elemente matrice:");
+        for (int i = 0; i < matr.length; i++) {
+            for (int j = 0; j < matr.length; j++) {
+                matr[i][j] = scanner.nextInt();
+            }
+        }
+
+    }
 }
